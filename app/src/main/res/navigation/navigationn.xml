@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationn"
+    app:startDestination="@id/fragment1">
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.david.uas_2.Fragment1"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_1">
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.david.uas_2.Fragment3"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_3"/>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.david.uas_2.Fragment2"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_2">
+        <action
+            android:id="@+id/action_fragment2_to_layanan"
+            app:destination="@id/layanan"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_fragment2_to_layanan2"
+            app:destination="@id/layanan2"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_fragment2_to_layanan3"
+            app:destination="@id/layanan3"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment5"
+        android:name="com.david.uas_2.Fragment5"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_5" />
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.david.uas_2.Fragment4"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_4"/>
+    <fragment
+        android:id="@+id/fragment7"
+        android:name="com.david.uas_2.Fragment7"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_7" />
+    <fragment
+        android:id="@+id/fragment8"
+        android:name="com.david.uas_2.Fragment8"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_8" />
+    <fragment
+        android:id="@+id/fragment9"
+        android:name="com.david.uas_2.Fragment9"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_9" />
+    <fragment
+        android:id="@+id/layanan"
+        android:name="com.david.uas_2.Layanan"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_layanan">
+        <action
+            android:id="@+id/action_layanan_to_fragment3"
+            app:destination="@id/fragment3"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_layanan_to_fragment7"
+            app:destination="@id/fragment7"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/layanan2"
+        android:name="com.david.uas_2.Layanan2"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_layanan2">
+        <action
+            android:id="@+id/action_layanan2_to_fragment4"
+            app:destination="@id/fragment4"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_layanan2_to_fragment9"
+            app:destination="@id/fragment9"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/layanan3"
+        android:name="com.david.uas_2.Layanan3"
+        android:label="Layanan Kepolisian"
+        tools:layout="@layout/fragment_layanan3">
+        <action
+            android:id="@+id/action_layanan3_to_fragment5"
+            app:destination="@id/fragment5"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_layanan3_to_fragment8"
+            app:destination="@id/fragment8"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+</navigation>
